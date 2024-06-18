@@ -7,6 +7,7 @@
     <title>Productos</title>
     <link rel="stylesheet" href="resent.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,7 @@
             </ul>
         </nav>
     </header>
+    <script> datosCliente("Ingrese tu correo electrónico");</script>
     <main>
         <section class="card-container">
             <article class="card">
@@ -69,6 +71,8 @@
                         molestias, ratione eaque voluptatum.</p>
                 </div>
             </article>
+
+
         </section>
     </main>
     <footer>
@@ -81,31 +85,7 @@
             </ul>
         </nav>
     </footer>
-    <script>
-            // Declaración y Asignación de "NombreCliente"
-            let nombreCliente = "";
-            nombreCliente = prompt("Cual es tu nombre?"); // valor ingresado a un cuadro de diálogo
-            document.write("Bienvenido " + nombreCliente);
-            
-            // "${NombreCliente}" marcador usado para llamar a una variable
-            if (nombreCliente) {
-                alert(`¡Hola, ${nombreCliente}! Bienvenido a nuestra página.`);
-            } else {
-                alert('Por favor, escribe tu nombre.');
-            }
 
-            // parseInt se utiliza para convertir la entrada del usuario en un número entero
-            const edad = parseInt(prompt("Cual es tu edad?"));
-            if (edad >= 18) {
-                alert("Cumples con el requisito de edad");
-            } else {
-                alert("No cumples con el requisito de edad");
-            }
-
-            const correo= prompt("Ingrese tu correo electrónico");
-            document.write(correo);
-
-    </script>
 </body>
 
 </html>
