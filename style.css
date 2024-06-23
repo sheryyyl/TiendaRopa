@@ -52,3 +52,36 @@ a{
 img{
     width: 110px;
 }
+
+.repeated-images {
+    margin-top: 20px; 
+    padding: 30px; 
+}
+
+.repeated-images h2 {
+    font-family: sans-serif;
+    font-size: 30px; 
+    color: #333;
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+#imagenRepetida {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+#imagenRepetida img {
+    max-width: 100px; 
+    height: auto; 
+    border: 1px solid #ddd; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+#imagenRepetida img:hover {
+    transform: scale(1.1); 
+}
